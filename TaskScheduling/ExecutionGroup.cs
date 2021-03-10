@@ -58,7 +58,7 @@ namespace TaskScheduling
                 Console.ForegroundColor = ConsoleColor.Gray;
 
 
-            }, LongRunning ? TaskCreationOptions.LongRunning :TaskCreationOptions.PreferFairness);
+            }, LongRunning ? TaskCreationOptions.LongRunning :TaskCreationOptions.None);
             return task;
         }
 

@@ -6,13 +6,13 @@ using System.Timers;
 using System;
 namespace TaskScheduling
 {
-    internal class TaskScheduler
+    internal class ExecutionGroupManager
     {
         private Dictionary<Timer, ExecutionGroup> _taskSchedule;
         private List<Timer> _taskTimers;
         private List<Task> _tasks;
 
-        public TaskScheduler()
+        public ExecutionGroupManager()
         {
             _taskSchedule = new Dictionary<Timer, ExecutionGroup>();
             _taskTimers = new List<Timer>();

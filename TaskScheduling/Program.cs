@@ -10,7 +10,7 @@ namespace TaskScheduling
         private static void Main(string[] args)
         {
             Program p = new Program();
-            TaskScheduler ts = new TaskScheduler();
+            ExecutionGroupManager ts = new ExecutionGroupManager();
          
             var executionGroup1 = new ExecutionGroup(persistentQueue:true,longRunning:false);
             executionGroup1.Name = "Group 1";
